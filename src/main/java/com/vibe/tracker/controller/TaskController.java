@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController // Tells Spring this class handles web API requests (not visual web pages)
 @RequestMapping("/api/tasks") // Sets the base URL for this whole file (localhost:8080/api/tasks)
+@CrossOrigin("http://localhost:5173")
 public class TaskController {
 
     // This connects our receptionist (Controller) to the database bridge (Repository)

@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/income") // The URL for income data
+@CrossOrigin("http://localhost:5173")
 public class IncomeController {
 
     private final IncomeRepository incomeRepository;

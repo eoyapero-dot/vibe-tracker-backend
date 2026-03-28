@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/expenses") // The URL for expense data
+@RequestMapping("/api/expenses")// The URL for expense data
+@CrossOrigin("http://localhost:5173")
 public class ExpenseController {
 
     private final ExpenseRepository expenseRepository;
